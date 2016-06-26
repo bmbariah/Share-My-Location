@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="myTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="colorPrimary">@color/nliveo_purple_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/nliveo_purple_colorPrimaryDark</item>
+        <item name="colorAccent">@color/nliveo_purple_colorPrimaryDark</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+</resources>

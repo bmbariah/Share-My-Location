@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Share My Location</string>
+    <string name="rights">© 2016. Boniface Mbaria. All rights reserved.</string>
+    <string name="about">This application allows users to send notes as well as share their gps location. All done via GCM.</string>
+    <string name="password">Password</string>
+    <string name="about_title">About</string>
+    <string name="user_or_email">Email</string>
+    <string name="sign_in">Sign Up</string>
+    <string name="login_checkbox">Show Password</string>
+    <string name="user">Username</string>
+    <string name="google_api_key">AIzaSyCK6cUV7O1ASiqzDgoCJ-CdaoCov1kJBhA</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="settings">Settings</string>
+    <string name="hint">Optional..</string>
+    <string name="send">Send</string>
+    <string name="text">Url</string>
+    <string name="text2">Add a note</string>
+    <string name="send_button">Share Location</string>
+    <string name="hello_world">I am very lost...</string>
+    <string name="send_msg">Send</string>
+    <string name="toolbarTitle">Share My Location</string>
+    <string name="logout">Logout</string>
+    <string name="refrsh">Refresh</string>
+
+</resources>

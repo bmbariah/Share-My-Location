@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="3dp">
+
+    <me.himanshusoni.chatmessageview.ChatMessageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/chatMessageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cmv_arrowGravity="start"
+        app:cmv_arrowMargin="3dp"
+        app:cmv_arrowPosition="right"
+        app:cmv_backgroundColor="#88BABABA"
+        app:cmv_backgroundColorPressed="#FFBABABA"
+        app:cmv_contentPadding="5dp"
+        app:cmv_cornerRadius="3dp"
+        app:cmv_showArrow="true">
+
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="map"
+            android:ellipsize="end"
+            android:maxEms="12"
+            android:maxLines="1"
+            android:text="www.google.com/url/maps=0.95"
+            android:textSize="12sp" />-->
+
+        <ImageView
+            android:id="@+id/url"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/url"
+            android:layout_marginTop="3dp"
+            android:text="I am here"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_marginTop="3dp"
+            android:text="Sent on : 22 June 2016"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/bright_foreground_disabled_material_light"
+            android:textSize="10sp"
+            android:textStyle="italic" />
+    </me.himanshusoni.chatmessageview.ChatMessageView>
+
+</RelativeLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbg"
+    android:fillViewport="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- Login Image -->
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:src="@drawable/logo" />
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <com.rey.material.widget.EditText
+                android:id="@+id/userNameET"
+                style="@style/DarkEditText"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:hint="@string/user"
+                android:inputType="text"
+                android:singleLine="true"
+                app:et_inputId="@+id/textfield_et_label_input"
+                app:et_labelTextColor="@color/nliveo_purple_colorPrimary"
+                app:et_supportMode="none" />
+
+
+            <!-- layout for Username -->
+
+            <com.rey.material.widget.EditText
+                android:id="@+id/emailNameET"
+                style="@style/DarkEditText"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:hint="@string/user_or_email"
+                android:inputType="text"
+                android:singleLine="true"
+                app:et_inputId="@+id/textfield_et_label_input"
+                app:et_labelTextColor="@color/nliveo_purple_colorPrimary"
+                app:et_supportMode="none" />
+
+
+            <!-- layout for Password -->
+
+            <com.rey.material.widget.EditText
+                android:id="@+id/passwordET"
+                style="@style/DarkEditText"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dp"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                app:et_inputId="@+id/textfield_et_helper_input"
+                app:et_supportMode="none" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <com.rey.material.widget.CheckBox
+
+                android:id="@+id/checkboxET"
+                style="@style/DarkEditText"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:inputType="text"
+                android:onClick="onCheckboxClicked"
+                android:text="@string/login_checkbox"
+                app:et_inputId="@+id/textfield_et_label_input"
+                app:et_labelTextColor="@color/nliveo_purple_colorPrimary"
+                app:et_supportMode="none" />
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/logInBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/joe"
+            android:text="@string/sign_in"
+            android:textColor="@color/abc_primary_text_disable_only_material_dark" />
+
+
+    </LinearLayout>
+
+</ScrollView>
